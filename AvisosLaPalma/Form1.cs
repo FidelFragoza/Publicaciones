@@ -36,5 +36,38 @@ namespace AvisosLaPalma
         {
 
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            
+            if (txtCodigoDeReferencia_Agregar.Text != null)
+            {
+                //Crea Objeto conexion
+                Conexion c = new Conexion();
+                //Instanciar
+                MessageBox.Show(c.insertarSP(txtCodigoDeReferencia_Agregar.Text, textTitulo.Text, richtextDescripcion.Text, textCreador.Text));
+            }
+            
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            
+            if (textCodigoDeReferencia_Eliminar.Text != null)
+            {
+                //Crea Objeto conexion
+                Conexion c = new Conexion();
+                //Instanciar
+                MessageBox.Show(c.eliminarSp(textCodigoDeReferencia_Eliminar.Text));
+            }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtCodigoDeReferencia_Agregar.Text = null;
+            textTitulo.Text = null;
+            richtextDescripcion.Text = null;
+            textCreador.Text = null;
+        }
     }
 }

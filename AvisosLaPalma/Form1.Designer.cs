@@ -40,9 +40,9 @@
             this.textCodigoDeReferencia_Eliminar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textTitulo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -104,7 +104,7 @@
             // 
             // txtCodigoDeReferencia_Agregar
             // 
-            this.txtCodigoDeReferencia_Agregar.Location = new System.Drawing.Point(71, 148);
+            this.txtCodigoDeReferencia_Agregar.Location = new System.Drawing.Point(72, 148);
             this.txtCodigoDeReferencia_Agregar.MaxLength = 8;
             this.txtCodigoDeReferencia_Agregar.Name = "txtCodigoDeReferencia_Agregar";
             this.txtCodigoDeReferencia_Agregar.Size = new System.Drawing.Size(100, 20);
@@ -113,6 +113,7 @@
             // textCreador
             // 
             this.textCreador.Location = new System.Drawing.Point(215, 179);
+            this.textCreador.MaxLength = 100;
             this.textCreador.Name = "textCreador";
             this.textCreador.Size = new System.Drawing.Size(100, 20);
             this.textCreador.TabIndex = 7;
@@ -128,6 +129,7 @@
             // textCodigoDeReferencia_Eliminar
             // 
             this.textCodigoDeReferencia_Eliminar.Location = new System.Drawing.Point(590, 151);
+            this.textCodigoDeReferencia_Eliminar.MaxLength = 8;
             this.textCodigoDeReferencia_Eliminar.Name = "textCodigoDeReferencia_Eliminar";
             this.textCodigoDeReferencia_Eliminar.Size = new System.Drawing.Size(100, 20);
             this.textCodigoDeReferencia_Eliminar.TabIndex = 9;
@@ -144,48 +146,52 @@
             // textTitulo
             // 
             this.textTitulo.Location = new System.Drawing.Point(352, 148);
+            this.textTitulo.MaxLength = 100;
             this.textTitulo.Name = "textTitulo";
             this.textTitulo.Size = new System.Drawing.Size(100, 20);
             this.textTitulo.TabIndex = 11;
             // 
-            // button1
+            // btnLimpiar
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.Location = new System.Drawing.Point(146, 394);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Limpiar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnLimpiar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLimpiar.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnLimpiar.Location = new System.Drawing.Point(146, 394);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 12;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // button2
+            // btnGuardar
             // 
-            this.button2.Location = new System.Drawing.Point(300, 394);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnGuardar.Location = new System.Drawing.Point(300, 394);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 13;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button3.Location = new System.Drawing.Point(605, 195);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnEliminar.Location = new System.Drawing.Point(605, 195);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.textTitulo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textCodigoDeReferencia_Eliminar);
@@ -220,9 +226,9 @@
         private System.Windows.Forms.TextBox textCodigoDeReferencia_Eliminar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textTitulo;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
 
