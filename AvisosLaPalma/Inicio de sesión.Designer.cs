@@ -40,7 +40,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label1.Location = new System.Drawing.Point(349, 69);
+            this.label1.Location = new System.Drawing.Point(85, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(227, 148);
+            this.label2.Location = new System.Drawing.Point(86, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 1;
@@ -59,7 +59,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(227, 221);
+            this.label3.Location = new System.Drawing.Point(74, 173);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 2;
@@ -67,21 +67,21 @@
             // 
             // textBoxUserName
             // 
-            this.textBoxUserName.Location = new System.Drawing.Point(325, 140);
+            this.textBoxUserName.Location = new System.Drawing.Point(61, 121);
             this.textBoxUserName.Name = "textBoxUserName";
             this.textBoxUserName.Size = new System.Drawing.Size(100, 20);
             this.textBoxUserName.TabIndex = 3;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(325, 221);
+            this.textBoxPassword.Location = new System.Drawing.Point(61, 201);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(100, 20);
             this.textBoxPassword.TabIndex = 4;
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(340, 288);
+            this.buttonLogin.Location = new System.Drawing.Point(77, 254);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonLogin.TabIndex = 5;
@@ -93,7 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(222, 303);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUserName);

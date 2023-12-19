@@ -38,9 +38,9 @@ namespace AvisosLaPalma
             if(lector.HasRows == true)
             {
                 MessageBox.Show("Bienvenido usuario");
-                Form1 primero = new Form1();
+                Menu LoginSuccess = new Menu();
                 this.Hide();
-                primero.Show();
+                LoginSuccess.Show();
 
             }
             else

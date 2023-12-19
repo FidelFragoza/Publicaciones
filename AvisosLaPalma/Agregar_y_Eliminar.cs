@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AvisosLaPalma
 {
-    public partial class Form1 : Form
+    public partial class Agregar_y_Eliminar : Form
     {
-        public Form1()
+        public Agregar_y_Eliminar()
         {
             InitializeComponent();
         }
@@ -68,6 +68,13 @@ namespace AvisosLaPalma
             textTitulo.Text = null;
             richtextDescripcion.Text = null;
             textCreador.Text = null;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu LoginSuccess = new Menu();
+            this.Hide();
+            LoginSuccess.Show();
         }
     }
 }

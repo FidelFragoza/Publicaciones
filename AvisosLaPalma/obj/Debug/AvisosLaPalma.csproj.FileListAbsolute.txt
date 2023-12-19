@@ -2,10 +2,11 @@ G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\bin\Debug\A
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\bin\Debug\AvisosLaPalma.exe
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\bin\Debug\AvisosLaPalma.pdb
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.csproj.AssemblyReference.cache
-G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.Form1.resources
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.Properties.Resources.resources
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.csproj.GenerateResource.cache
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.csproj.CoreCompileInputs.cache
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.exe
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.pdb
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.Inicio_de_sesión.resources
+G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.Menu.resources
+G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.Agregar_y_Eliminar.resources

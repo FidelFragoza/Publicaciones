@@ -1,6 +1,6 @@
 ﻿namespace AvisosLaPalma
 {
-    partial class Form1
+    partial class Agregar_y_Eliminar
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -43,6 +43,7 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.BottonRegresarMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -184,11 +185,30 @@
             this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // Form1
+            // BottonRegresarMenu
+            // 
+            this.BottonRegresarMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BottonRegresarMenu.BackColor = System.Drawing.Color.Transparent;
+            this.BottonRegresarMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BottonRegresarMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BottonRegresarMenu.ForeColor = System.Drawing.Color.Transparent;
+            this.BottonRegresarMenu.Image = global::AvisosLaPalma.Properties.Resources.regresa;
+            this.BottonRegresarMenu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BottonRegresarMenu.Location = new System.Drawing.Point(12, 12);
+            this.BottonRegresarMenu.Name = "BottonRegresarMenu";
+            this.BottonRegresarMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.BottonRegresarMenu.Size = new System.Drawing.Size(40, 39);
+            this.BottonRegresarMenu.TabIndex = 15;
+            this.BottonRegresarMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BottonRegresarMenu.UseVisualStyleBackColor = false;
+            this.BottonRegresarMenu.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Agregar_y_Eliminar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BottonRegresarMenu);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnLimpiar);
@@ -204,8 +224,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Name = "Agregar_y_Eliminar";
+            this.Text = "Agregar_y_Eliminar";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -229,6 +250,7 @@
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button BottonRegresarMenu;
     }
 }
 

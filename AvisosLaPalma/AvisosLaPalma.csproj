@@ -47,11 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Agregar_y_Eliminar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Agregar_y_Eliminar.Designer.cs">
+      <DependentUpon>Agregar_y_Eliminar.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicio de sesión.cs">
       <SubType>Form</SubType>
@@ -59,13 +59,22 @@
     <Compile Include="Inicio de sesión.Designer.cs">
       <DependentUpon>Inicio de sesión.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Agregar_y_Eliminar.resx">
+      <DependentUpon>Agregar_y_Eliminar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio de sesión.resx">
       <DependentUpon>Inicio de sesión.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,6 +98,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\5791381.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\regresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\regresa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
