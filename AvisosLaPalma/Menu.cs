@@ -30,7 +30,9 @@ namespace AvisosLaPalma
 
         private void buttonMenuVerPublicaciones_Click(object sender, EventArgs e)
         {
-            
+            Publicaciones vistaPublicaciones = new Publicaciones(formularioInicioSesion);
+            this.Hide();
+            vistaPublicaciones.Show();
         }
     }
 }

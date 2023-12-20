@@ -10,3 +10,4 @@ G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\A
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.Inicio_de_sesión.resources
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.Menu.resources
 G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.Agregar_y_Eliminar.resources
+G:\Aprendizaje\Proyectos\Avisos La Palma\AvisosLaPalma\AvisosLaPalma\obj\Debug\AvisosLaPalma.Publicaciones.resources
