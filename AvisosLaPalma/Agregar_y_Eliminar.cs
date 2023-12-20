@@ -65,8 +65,11 @@ namespace AvisosLaPalma
             {
                 //Crea Objeto conexion
                 Conexion c = new Conexion();
+                // Obtén el nombre de usuario desde la propiedad NombreUsuario de Inicio_de_sesión
+                string nombreUsuario = formularioInicioSesion.NombreUsuario;
                 //Instanciar
-                MessageBox.Show(c.eliminarSp(textCodigoDeReferencia_Eliminar.Text));
+                MessageBox.Show(c.eliminarSp(textCodigoDeReferencia_Eliminar.Text, nombreUsuario));
+
             }
         }
 

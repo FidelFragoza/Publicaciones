@@ -62,7 +62,7 @@ namespace AvisosLaPalma
         }
 
         //Metodo para eliminar
-        public string eliminarSp(string ID)
+        public string eliminarSp(string ID, string Creador)
         {
             string salida = "Se eliminó Registro";
             try
@@ -77,13 +77,17 @@ namespace AvisosLaPalma
 
                 //Mandar los parametros al procedimiento almacenado a paritr de las variables de la aplicación
                 cmd.Parameters.AddWithValue("@ID", ID);
+                cmd.Parameters.AddWithValue("@Creador", Creador);
+                //Lector antes de hacer algo
                 //Ejecutar la sentencia sql en el servidor
                 cmd.ExecuteNonQuery();
+
             }
             catch (Exception ex)
             {
                 salida = "No se conecto: " + ex.ToString();
             }
+
             return salida;
         }
     }
