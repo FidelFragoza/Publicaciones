@@ -31,11 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCodigoDeReferencia_Agregar = new System.Windows.Forms.TextBox();
-            this.textCreador = new System.Windows.Forms.TextBox();
             this.richtextDescripcion = new System.Windows.Forms.RichTextBox();
             this.textCodigoDeReferencia_Eliminar = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,15 +49,15 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(212, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.Size = new System.Drawing.Size(80, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Agregar publicación";
+            this.label1.Text = "Agregar reporte";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(386, 118);
+            this.label2.Location = new System.Drawing.Point(354, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 1;
@@ -75,23 +73,14 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Descripción";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(246, 151);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Creador";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(590, 44);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 13);
+            this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Eliminar publicación";
+            this.label5.Text = "Eliminar reporte";
             // 
             // label6
             // 
@@ -105,19 +94,11 @@
             // 
             // txtCodigoDeReferencia_Agregar
             // 
-            this.txtCodigoDeReferencia_Agregar.Location = new System.Drawing.Point(72, 148);
+            this.txtCodigoDeReferencia_Agregar.Location = new System.Drawing.Point(131, 165);
             this.txtCodigoDeReferencia_Agregar.MaxLength = 8;
             this.txtCodigoDeReferencia_Agregar.Name = "txtCodigoDeReferencia_Agregar";
             this.txtCodigoDeReferencia_Agregar.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoDeReferencia_Agregar.TabIndex = 6;
-            // 
-            // textCreador
-            // 
-            this.textCreador.Location = new System.Drawing.Point(215, 179);
-            this.textCreador.MaxLength = 100;
-            this.textCreador.Name = "textCreador";
-            this.textCreador.Size = new System.Drawing.Size(100, 20);
-            this.textCreador.TabIndex = 7;
             // 
             // richtextDescripcion
             // 
@@ -138,7 +119,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(68, 118);
+            this.label7.Location = new System.Drawing.Point(128, 131);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(105, 13);
             this.label7.TabIndex = 10;
@@ -146,7 +127,7 @@
             // 
             // textTitulo
             // 
-            this.textTitulo.Location = new System.Drawing.Point(352, 148);
+            this.textTitulo.Location = new System.Drawing.Point(319, 165);
             this.textTitulo.MaxLength = 100;
             this.textTitulo.Name = "textTitulo";
             this.textTitulo.Size = new System.Drawing.Size(100, 20);
@@ -216,11 +197,9 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textCodigoDeReferencia_Eliminar);
             this.Controls.Add(this.richtextDescripcion);
-            this.Controls.Add(this.textCreador);
             this.Controls.Add(this.txtCodigoDeReferencia_Agregar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -238,11 +217,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCodigoDeReferencia_Agregar;
-        private System.Windows.Forms.TextBox textCreador;
         private System.Windows.Forms.RichTextBox richtextDescripcion;
         private System.Windows.Forms.TextBox textCodigoDeReferencia_Eliminar;
         private System.Windows.Forms.Label label7;

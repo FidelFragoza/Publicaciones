@@ -12,16 +12,20 @@ namespace AvisosLaPalma
 {
     public partial class Menu : Form
     {
-        public Menu()
+
+        private Inicio_de_sesión formularioInicioSesion;
+        public Menu(Inicio_de_sesión inicioSesionForm)
         {
             InitializeComponent();
+            formularioInicioSesion = inicioSesionForm;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Agregar_y_Eliminar AgregaryEliminar = new Agregar_y_Eliminar();
+            // Pasar la instancia del formulario de inicio de sesión al formulario Agregar_y_Eliminar
+            Agregar_y_Eliminar agregarEliminarForm = new Agregar_y_Eliminar(formularioInicioSesion);
             this.Hide();
-            AgregaryEliminar.Show();
+            agregarEliminarForm.Show();
         }
 
         private void buttonMenuVerPublicaciones_Click(object sender, EventArgs e)

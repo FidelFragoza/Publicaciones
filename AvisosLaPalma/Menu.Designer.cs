@@ -48,7 +48,7 @@
             this.buttonMenuVerPublicaciones.Name = "buttonMenuVerPublicaciones";
             this.buttonMenuVerPublicaciones.Size = new System.Drawing.Size(181, 102);
             this.buttonMenuVerPublicaciones.TabIndex = 1;
-            this.buttonMenuVerPublicaciones.Text = "Ver publicaciones";
+            this.buttonMenuVerPublicaciones.Text = "Ver reportes";
             this.buttonMenuVerPublicaciones.UseVisualStyleBackColor = true;
             this.buttonMenuVerPublicaciones.Click += new System.EventHandler(this.buttonMenuVerPublicaciones_Click);
             // 

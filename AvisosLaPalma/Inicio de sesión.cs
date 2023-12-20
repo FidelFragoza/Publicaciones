@@ -15,6 +15,15 @@ namespace AvisosLaPalma
 {
     public partial class Inicio_de_sesión : Form
     {
+        //Nombre de usuario
+        private string nombreUsuario;
+
+        // Propiedad para acceder al nombre de usuario
+        public string NombreUsuario
+        {
+            get { return nombreUsuario; }
+        }
+
         public Inicio_de_sesión()
         {
             InitializeComponent();
@@ -35,13 +44,17 @@ namespace AvisosLaPalma
             SqlDataReader lector;
             lector = comando.ExecuteReader();
 
-            if(lector.HasRows == true)
+            if (lector.HasRows == true)
             {
                 MessageBox.Show("Bienvenido usuario");
-                Menu LoginSuccess = new Menu();
-                this.Hide();
-                LoginSuccess.Show();
 
+                // Asignar el nombre de usuario
+                nombreUsuario = textBoxUserName.Text;
+
+                // Utilizar la instancia correcta de Menu
+                Menu loginSuccess = new Menu(this);
+                this.Hide();
+                loginSuccess.Show();
             }
             else
             {
@@ -49,6 +62,7 @@ namespace AvisosLaPalma
             }
             c.Close();
         }
+
 
         private void Inicio_de_sesión_Load(object sender, EventArgs e)
         {

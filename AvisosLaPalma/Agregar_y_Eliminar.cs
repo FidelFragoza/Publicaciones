@@ -12,9 +12,12 @@ namespace AvisosLaPalma
 {
     public partial class Agregar_y_Eliminar : Form
     {
-        public Agregar_y_Eliminar()
+        private Inicio_de_sesión formularioInicioSesion;
+
+        public Agregar_y_Eliminar(Inicio_de_sesión inicioSesionForm)
         {
             InitializeComponent();
+            formularioInicioSesion = inicioSesionForm;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -42,12 +45,17 @@ namespace AvisosLaPalma
             
             if (txtCodigoDeReferencia_Agregar.Text != null)
             {
-                //Crea Objeto conexion
+                // Crea Objeto conexion
                 Conexion c = new Conexion();
-                //Instanciar
-                MessageBox.Show(c.insertarSP(txtCodigoDeReferencia_Agregar.Text, textTitulo.Text, richtextDescripcion.Text, textCreador.Text));
+
+                // Obtén el nombre de usuario desde la propiedad NombreUsuario de Inicio_de_sesión
+                string nombreUsuario = formularioInicioSesion.NombreUsuario;
+
+                // Instanciar
+                MessageBox.Show(c.insertarSP(txtCodigoDeReferencia_Agregar.Text, textTitulo.Text, richtextDescripcion.Text, nombreUsuario));
+
             }
-            
+
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -67,14 +75,13 @@ namespace AvisosLaPalma
             txtCodigoDeReferencia_Agregar.Text = null;
             textTitulo.Text = null;
             richtextDescripcion.Text = null;
-            textCreador.Text = null;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menu LoginSuccess = new Menu();
+            Menu loginSuccess = new Menu(formularioInicioSesion);
             this.Hide();
-            LoginSuccess.Show();
+            loginSuccess.Show();
         }
     }
 }
